@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="owl/css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="owl/css/owl.theme.default.min.css">
+    <style>
+    .wrapper {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="image/gophercises_jumping.gif" class="img-fluid" alt="12">
+            </div>
+            <div class="item">
+                <img src="image/gophercises_jumping.gif" class="img-fluid" alt="12">
+            </div>
+            <div class="item">
+                <img src="image/gophercises_jumping.gif" class="img-fluid" alt="12">
+            </div>
+            <div class="item">
+                <img src="image/gophercises_jumping.gif" class="img-fluid" alt="12">
+            </div>
+            <div class="item">
+                <img src="image/gophercises_jumping.gif" class="img-fluid" alt="12">
+            </div>
+            <div class="item">
+                <img src="image/gophercises_jumping.gif" class="img-fluid" alt="12">
+            </div>
+            <div class="item">
+                <img src="image/gophercises_jumping.gif" class="img-fluid" alt="12">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="owl/js/owl.carousel.min.js"></script>
+    
+    
+<script>
+$(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 6,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true
+              });
+              $('.play').on('click', function() {
+                owl.trigger('play.owl.autoplay', [1000])
+              })
+              $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+              })
+            })
+</script>
+</body>
+</html>
